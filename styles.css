@@ -1,1 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: darkolivegreen;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 120px;
+    width: 180px;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 2px solid slateblue;
+    border-radius: 10px;
+}
+
+.input {
+    height: 2rem;
+    width: 15rem;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+
+.btn1 {
+    height: 2.5rem;
+    width: 120px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.btn1:active {
+    background-color: darkcyan;
+}
+
+.color {
+    color: slateblue;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        flex-direction: row;
+    }
+    .body{
+        flex-direction: row;
+    }
+
+    .content {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100px;
+        height: 80px;
+        font-size: 0.9rem;
+    }
+
+    .input {
+        width: 80%;
+        position: relative;
+        top: 20px;
+        right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn1 {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        gap: 15px;
+        flex-direction: row;
+    }
+
+    .box {
+        width: 90px;
+        height: 70px;
+        font-size: 0.7rem;
+    }
+
+    .input {
+        width: 70%;
+        top: 15px;
+    }
+
+    .btn1 {
+        width: 70%;
+        font-size: 0.9rem;
+    }
+}
 
